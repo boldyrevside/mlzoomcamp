@@ -79,7 +79,7 @@ def run_register_model(data_path: str, top_n: int):
     # mlflow.register_model( ... )
     best_run_id = best_run.info.run_id
     model_uri = f"runs:/{best_run_id}/model"
-    mlflow.register_model(model_uri=model_uri, name="random-forest-best-models-1")
+    mlflow.register_model(model_uri=model_uri, name="random-forest-best-models")
     
 
 
